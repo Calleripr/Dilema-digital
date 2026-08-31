@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dilemas Digitais — Escolhas que moldam o futuro</title>
+  <meta name="description" content="Explore os grandes dilemas éticos, sociais e tecnológicos da era digital. Privacidade, IA, redes sociais, desinformação e muito mais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#inicio" class="logo">
+        <span class="logo-icon">◈</span>
+        Dilemas Digitais
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#dilemas">Dilemas</a></li>
+        <li><a href="#explorar">Explorar</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#reflexao">Reflexão</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Era da Informação · 2026</p>
+      <h1>Dilemas<br /><span>Digitais</span></h1>
+      <p class="hero-sub">
+        Cada clique, cada dado, cada algoritmo esconde uma escolha ética.
+        Explore os conflitos que definem como vivemos, trabalhamos e nos relacionamos no mundo conectado.
+      </p>
+      <div class="hero-actions">
+        <a href="#dilemas" class="btn btn-primary">Explorar dilemas</a>
+        <a href="#quiz" class="btn btn-ghost">Testar minha posição</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Role para descobrir</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat">
+        <span class="stat-num" data-target="5.4">0</span>
+        <span class="stat-label">bilhões de usuários de internet</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="120">0</span>
+        <span class="stat-label">zetabytes de dados gerados por ano</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="3.5">0</span>
+        <span class="stat-label">horas médias de tela por dia</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="87">0</span>
+        <span class="stat-label">% preocupados com privacidade</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dilemas Grid -->
+  <section class="dilemas" id="dilemas">
+    <div class="container">
+      <div class="section-header">
+        <h2>Os 6 grandes dilemas</h2>
+        <p>Não existem respostas fáceis. Existem trade-offs. Cada escolha molda o futuro digital.</p>
+      </div>
+
+      <div class="dilema-grid">
+        <!-- 1 -->
+        <article class="dilema-card" data-dilema="privacidade">
+          <div class="dilema-num">01</div>
+          <h3>Privacidade vs. Conveniência</h3>
+          <p>Aceitamos rastreamento em troca de recomendações personalizadas, mapas precisos e login com um clique. Até onde vale a pena abrir mão do nosso espaço íntimo digital?</p>
+          <div class="dilema-sides">
+            <div class="side side-a">
+              <strong>Privacidade</strong>
+              <span>Controle total sobre dados pessoais, anonimato e autonomia.</span>
+            </div>
+            <div class="side side-b">
+              <strong>Conveniência</strong>
+              <span>Serviços grátis, experiência fluida e personalização.</span>
+            </div>
+          </div>
+          <button class="dilema-btn" data-open="privacidade">Refletir sobre isso</button>
+        </article>
+
+        <!-- 2 -->
+        <article class="dilema-card" data-dilema="liberdade">
+          <div class="dilema-num">02</div>
+          <h3>Liberdade de expressão vs. Segurança</h3>
+          <p>Plataformas precisam moderar conteúdo tóxico, discurso de ódio e desinformação. Mas quem define os limites? E o que acontece quando a moderação vira censura?</p>
+          <div class="dilema-sides">
+            <div class="side side-a">
+              <strong>Expressão livre</strong>
+              <span>Ideias abertas, debate sem filtros e resistência a abusos de poder.</span>
+            </div>
+            <div class="side side-b">
+              <strong>Segurança</strong>
+              <span>Proteção contra ódio, assédio e radicalização online.</span>
+            </div>
+          </div>
+          <button class="dilema-btn" data-open="liberdade">Refletir sobre isso</button>
+        </article>
+
+        <!-- 3 -->
+        <article class="dilema-card" data-dilema="ia">
+          <div class="dilema-num">03</div>
+          <h3>Inteligência Artificial: progresso vs. risco</h3>
+          <p>IA acelera ciência, medicina e produtividade. Ao mesmo tempo, concentra poder, pode discriminar e ameaça empregos. Devemos desacelerar a inovação por precaução?</p>
+          <div class="dilema-sides">
+            <div class="side side-a">
+              <strong>Acelerar</strong>
+              <span>Inovação rápida, benefícios sociais e competitividade global.</span>
+            </div>
+            <div class="side side-b">
+              <strong>Regular</strong>
+              <span>Controle de riscos, alinhamento ético e proteção humana.</span>
+            </div>
+          </div>
+          <button class="dilema-btn" data-open="ia">Refletir sobre isso</button>
+        </article>
+
+        <!-- 4 -->
+        <article class="dilema-card" data-dilema="atencao">
+          <div class="dilema-num">04</div>
+          <h3>Atenção como recurso escasso</h3>
+          <p>Algoritmos são projetados para maximizar tempo de tela. Nossa atenção virou commodity. Quem controla o que vemos e quanto tempo gastamos?</p>
+          <div class="dilema-sides">
+            <div class="side side-a">
+              <strong>Autonomia</strong>
+              <span>Usuário no controle, design ético e menos manipulação.</span>
+            </div>
+            <div class="side side-b">
+              <strong>Engajamento</strong>
+              <span>Conteúdo viciante, monetização e modelos de negócio atuais.</span>
+            </div>
+          </div>
+          <button class="dilema-btn" data-open="atencao">Refletir sobre isso</button>
+        </article>
+
+        <!-- 5 -->
+        <article class="dilema-card" data-dilema="verdade">
+          <div class="dilema-num">05</div>
+          <h3>Verdade vs. Narrativa</h3>
+          <p>Deepfakes, bots e câmaras de eco distorcem a realidade. A verdade ainda existe online? Ou vivemos em múltiplas realidades paralelas construídas por algoritmos?</p>
+          <div class="dilema-sides">
+            <div class="side side-a">
+              <strong>Fatos verificáveis</strong>
+              <span>Jornalismo, checagem e fontes confiáveis como âncora.</span>
+            </div>
+            <div class="side side-b">
+              <strong>Perspectivas</strong>
+              <span>Pluralidade de vozes, mas risco de relativismo extremo.</span>
+            </div>
+          </div>
+          <button class="dilema-btn" data-open="verdade">Refletir sobre isso</button>
+        </article>
+
+        <!-- 6 -->
+        <article class="dilema-card" data-dilema="acesso">
+          <div class="dilema-num">06</div>
+          <h3>Inclusão digital vs. exclusão</h3>
+          <p>Quem não tem acesso à internet de qualidade, dispositivos ou alfabetização digital fica para trás. A tecnologia amplifica desigualdades ou pode reduzi-las?</p>
+          <div class="dilema-sides">
+            <div class="side side-a">
+              <strong>Acesso universal</strong>
+              <span>Conectividade como direito, educação digital e políticas públicas.</span>
+            </div>
+            <div class="side side-b">
+              <strong>Mercado livre</strong>
+              <span>Inovação impulsionada por demanda e investimento privado.</span>
+            </div>
+          </div>
+          <button class="dilema-btn" data-open="acesso">Refletir sobre isso</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore deeper -->
+  <section class="explorar" id="explorar">
+    <div class="container">
+      <div class="section-header">
+        <h2>Olhando mais de perto</h2>
+        <p>Cada dilema tem camadas. Aqui vão algumas perguntas que valem a pena carregar.</p>
+      </div>
+
+      <div class="explore-list">
+        <div class="explore-item">
+          <div class="explore-icon">🔐</div>
+          <div>
+            <h4>Seus dados valem mais do que você imagina</h4>
+            <p>Empresas e governos coletam rastros de comportamento, localização, preferências e relações. Esses dados alimentam publicidade, crédito, policiamento preditivo e até decisões de saúde. Você sabe quem tem acesso aos seus?</p>
+          </div>
+        </div>
+        <div class="explore-item">
+          <div class="explore-icon">🧠</div>
+          <div>
+            <h4>Algoritmos não são neutros</h4>
+            <p>Eles refletem os dados com que foram treinados e os objetivos de quem os criou. Viés racial, de gênero e de classe pode se perpetuar em sistemas de recrutamento, justiça e crédito. Transparência e auditoria são possíveis?</p>
+          </div>
+        </div>
+        <div class="explore-item">
+          <div class="explore-icon">📱</div>
+          <div>
+            <h4>Design persuasivo e saúde mental</h4>
+            <p>Notificações, scroll infinito e recompensas variáveis foram inspirados em cassinos. Estudos ligam uso excessivo de redes a ansiedade, comparação social e privação de sono — especialmente entre jovens.</p>
+          </div>
+        </div>
+        <div class="explore-item">
+          <div class="explore-icon">🌍</div>
+          <div>
+            <h4>O custo ambiental do digital</h4>
+            <p>Data centers, mineração de criptomoedas e treinamento de modelos de IA consomem energia e água em escala industrial. A nuvem não é virtual — ela tem pegada de carbono real.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz -->
+  <section class="quiz" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <h2>Qual é a sua posição?</h2>
+        <p>Responda 5 perguntas rápidas e veja como você se posiciona nos dilemas digitais.</p>
+      </div>
+
+      <div class="quiz-box" id="quizBox">
+        <div class="quiz-progress">
+          <div class="quiz-bar" id="quizBar"></div>
+        </div>
+        <div class="quiz-content" id="quizContent">
+          <!-- Questions injected by JS -->
+        </div>
+        <div class="quiz-result" id="quizResult" hidden>
+          <h3 id="resultTitle"></h3>
+          <p id="resultText"></p>
+          <button class="btn btn-primary" id="quizRestart">Refazer quiz</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="reflexao" id="reflexao">
+    <div class="container">
+      <div class="reflexao-inner">
+        <h2>Não existe neutralidade digital</h2>
+        <p>
+          Toda plataforma, todo algoritmo e toda política de dados carrega valores.
+          A pergunta não é se vamos escolher, mas <em>como</em> vamos escolher —
+          e se vamos fazer isso de forma consciente.
+        </p>
+        <p class="reflexao-quote">
+          “A tecnologia não é boa nem má; também não é neutra.”
+          <span>— Melvin Kranzberg</span>
+        </p>
+        <div class="reflexao-actions">
+          <a href="#dilemas" class="btn btn-primary">Revisitar os dilemas</a>
+          <button class="btn btn-ghost" id="shareBtn">Compartilhar reflexão</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo">
+          <span class="logo-icon">◈</span>
+          Dilemas Digitais
+        </div>
+        <p>Um espaço para pensar as escolhas que moldam o futuro conectado.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>Feito para reflexão · 2026</span>
+        <span>Não coletamos dados pessoais</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-close aria-label="Fechar">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
