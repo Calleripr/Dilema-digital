@@ -8,11 +8,15 @@ window.addEventListener('scroll', () => {
 });
 
 navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  const open = navLinks.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', open);
 });
 
 navLinks.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => navLinks.classList.remove('open'));
+  a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
 });
 
 /* ===== Stats counter ===== */
@@ -91,7 +95,7 @@ const modalData = {
   atencao: {
     title: 'Atenção como recurso escasso',
     body: `
-      <p>O modelo de “economia da atenção” recompensa o tempo de tela. Design persuasivo — notações, feeds infinitos, recompensas variáveis — compete diretamente com sono, estudo, relações e foco profundo.</p>
+      <p>O modelo de “economia da atenção” recompensa o tempo de tela. Design persuasivo — notificações, feeds infinitos, recompensas variáveis — compete diretamente com sono, estudo, relações e foco profundo.</p>
       <p><strong>Pontos para refletir:</strong></p>
       <ul>
         <li>Você consegue estimar quanto tempo “não intencional” passa em apps?</li>
@@ -137,7 +141,7 @@ document.querySelectorAll('[data-open]').forEach(btn => {
     const key = btn.dataset.open;
     const data = modalData[key];
     if (!data) return;
-    modalBody.innerHTML = `<h3>${data.title}</h3>${data.body}`;
+    modalBody.innerHTML = `<h3 id="modalTitle">${data.title}</h3>${data.body}`;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
   });
@@ -281,7 +285,5 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
       await navigator.clipboard.writeText(window.location.href);
       alert('Link copiado para a área de transferência!');
     }
-  } catch (_) {
-    // user cancelled or not supported
-  }
+  } catch (_) {}
 });
